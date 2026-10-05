@@ -40,7 +40,7 @@ public class Main {
             }
             else if(operations.equals("CHECK")){
                 if(courses.containsKey(course)){
-                    System.out.println(course + ": " + courses.get(course));
+                    System.out.println(course + ": " + courses.get(course) + " students");
                 }
                 else{
                     System.out.println(course + ": Not found");
@@ -51,7 +51,7 @@ public class Main {
         System.out.println();
         System.out.println("===== Final Enrollment =====");
         for(String name : courses.keySet()){
-            System.out.println(name + ": " + courses.get(name));
+            System.out.println(name + ": " + courses.get(name) + " students");
         }
         System.out.println();
         System.out.println("Rejected operations: " + failedOperations);
