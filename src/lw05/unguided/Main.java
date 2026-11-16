@@ -31,7 +31,7 @@ public class Main {
         visited.add(start);
 
         while (!queue.isEmpty()) {
-            int current = queue.poll();                  // take the building at the front of the queue
+            int current = queue.poll();
             order.add(current);
 
             for (int next = 0; next < size; next++) {
